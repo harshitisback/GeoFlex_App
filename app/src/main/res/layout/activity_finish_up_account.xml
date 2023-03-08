@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FinishUpAccount">
+
+    <include layout="@layout/toolbarstep1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:src="@drawable/baseline_check_circle_outline_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/step1of3finished"
+            android:gravity="center"
+            android:text="STEP 1 OF 3"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Finish setting up your Account"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Geoflex is personalized for you.\nCreate
+ a Password to watch \nGeoflex on
+any device at any time"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/contifinishup"
+            android:layout_width="291dp"
+            android:layout_height="58dp"
+            android:background="@color/activedots"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="Continue"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

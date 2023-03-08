@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ChooseyourPlan">
+
+<!--    included the toolbar -->
+    <include layout="@layout/toolbarstep1"
+        android:id="@+id/include2" />
+
+<!--    setting scroll view -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="70dp"
+        android:soundEffectsEnabled="true"
+        android:layout_marginBottom="-4dp"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="20dp"
+                android:text="Choose The Plan That's right for you."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="10dp"
+                android:text="Downgrade or upgrade at anytime"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="304dp"
+                android:layout_height="243dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforbasic"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="@color/activedots"
+                        android:layout_height="33dp" />
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="Basic"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="₹ 34/month"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:layout_marginTop="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/basic_plan" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="304dp"
+                android:layout_height="243dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforstandard"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="@color/activedots"
+                        android:layout_height="33dp" />
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="Standard"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="₹ 64/month"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:layout_marginTop="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/basic_plan" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="304dp"
+                android:layout_height="243dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforpremium"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="33dp" />
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="Premium"
+                        android:buttonTint="@color/activedots"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="₹ 84/month"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:layout_marginTop="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/basic_plan" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnconti"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@color/activedots"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Continue"
+                android:layout_marginStart="10dp"
+                android:textAlignment="center"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
