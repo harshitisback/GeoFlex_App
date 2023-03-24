@@ -13,8 +13,13 @@ import android.widget.Toast;
 import com.example.myapp.MainScreens.mainScreen;
 import com.example.myapp.R;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class SIgninActivity extends AppCompatActivity {
 
+    static  int couter = 0;
+    static  int duration = 5000;
     ProgressBar pgbar;
     TextView forget;
     Button signIn;
@@ -55,5 +60,21 @@ public class SIgninActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void progress(){
+        // object of java util pack
+        final Timer timer = new Timer();
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                couter++;
+                pgbar.setProgress(couter);
+                if (couter==50000){
+                    timer.cancel();
+                }
+            }
+        };
+        timer.schedule(timerTask,0,100);
     }
 }

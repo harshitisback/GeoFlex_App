@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Myapp"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.PaymentGateway"
+            android:exported="false" />
+        <activity
             android:name=".Activities.StepThree"
             android:exported="false" />
         <activity

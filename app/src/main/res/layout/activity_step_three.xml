@@ -6,4 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".Activities.StepThree">
 
+    <include layout="@layout/toolbarstep3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center">
+            <include layout="@layout/lockicon"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/step3tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STEP 3 OF 3"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/steppayment3tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Setup your payment"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Memebership will start as soon as you setup payment."
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/canceltv"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can cancel it anyTime"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/paymentbtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_stroke">
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Credit or Debit Card"
+                android:gravity="center"
+                android:textStyle="bold"
+               android:textSize="15dp"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mscard"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/aex"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/baseline_navigate_next_24"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
