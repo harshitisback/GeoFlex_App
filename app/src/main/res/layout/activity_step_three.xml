@@ -109,8 +109,7 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/baseline_navigate_next_24"/>
 
-
-
+            
         </LinearLayout>
 
 
